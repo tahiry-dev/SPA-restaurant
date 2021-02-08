@@ -1,9 +1,9 @@
-export const why = function () {
-    const why_container = document.createElement('section');
-    why_container.setAttribute('id', 'why-us');
-    why_container.className = ('why-us');
+export default function why() {
+  const whyContainer = document.createElement('section');
+  whyContainer.setAttribute('id', 'why-us');
+  whyContainer.className = ('why-us');
 
-    why_container.innerHTML = `
+  whyContainer.innerHTML = `
             <div class="container">
 
                 <div class="section-title">
@@ -43,6 +43,6 @@ export const why = function () {
 
             </div>
     
-        `
-    return why_container;
+        `;
+  return whyContainer;
 }

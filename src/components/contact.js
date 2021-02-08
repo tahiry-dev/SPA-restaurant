@@ -1,9 +1,9 @@
-export const contact = function () {
-    const contact = document.createElement('section');
-    contact.setAttribute('id', 'contact');
-    contact.className = ('contact');
+export default function contact() {
+  const contact = document.createElement('section');
+  contact.setAttribute('id', 'contact');
+  contact.className = ('contact');
 
-    contact.innerHTML = `
+  contact.innerHTML = `
             <div class="container">
                 <div class="section-title">
                   <h2><span>Contact</span> Us</h2>
@@ -74,6 +74,6 @@ export const contact = function () {
                 </form>
 
             </div>
-        `
-    return contact;
+        `;
+  return contact;
 }

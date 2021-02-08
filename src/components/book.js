@@ -1,9 +1,9 @@
-export const book = function () {
-    const book_container = document.createElement('section');
-    book_container.setAttribute('id', 'book-a-table');
-    book_container.className = ('book-a-table');
+export default function book() {
+  const bookContainer = document.createElement('section');
+  bookContainer.setAttribute('id', 'book-a-table');
+  bookContainer.className = ('book-a-table');
 
-    book_container.innerHTML = `
+  bookContainer.innerHTML = `
         <div class="container">
     
             <div class="section-title">
@@ -60,6 +60,6 @@ export const book = function () {
     
         </div>
             
-        `
-    return book_container;
+        `;
+  return bookContainer;
 }

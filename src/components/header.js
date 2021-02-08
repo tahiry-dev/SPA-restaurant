@@ -1,4 +1,4 @@
-export const header = function () {
+export default function header() {
   const nav = document.createElement('header');
   nav.setAttribute('id', 'header');
   nav.className = ('fixed-top d-flex align-items-center header-transparent');
@@ -22,6 +22,6 @@ export const header = function () {
 
             </div>
 
-    `
+    `;
   return nav;
 }

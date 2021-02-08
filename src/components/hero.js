@@ -1,7 +1,7 @@
-export const hero = function () {
-  const hero_container = document.createElement('section');
-  hero_container.setAttribute('id', 'hero');
-  hero_container.innerHTML = `
+export default function hero() {
+  const heroContainer = document.createElement('section');
+  heroContainer.setAttribute('id', 'hero');
+  heroContainer.innerHTML = `
     <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -26,6 +26,6 @@ export const hero = function () {
           </div>
         </div>
     </div>
-  `
-  return hero_container;
+  `;
+  return heroContainer;
 }

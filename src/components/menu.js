@@ -1,9 +1,9 @@
-export const menu = function () {
-  const menu_container = document.createElement('section');
-  menu_container.setAttribute('id', 'menu');
-  menu_container.className = ('menu');
+export default function menu() {
+  const menuContainer = document.createElement('section');
+  menuContainer.setAttribute('id', 'menu');
+  menuContainer.className = ('menu');
 
-  menu_container.innerHTML = `
+  menuContainer.innerHTML = `
         <div class="container">
 
             <div class="section-title">
@@ -105,6 +105,6 @@ export const menu = function () {
               </div>
             </div>
         </div>
-        `
-  return menu_container;
+        `;
+  return menuContainer;
 }

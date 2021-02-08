@@ -282,7 +282,7 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -295,6 +295,15 @@
   },
   "homepage": "https://github.com/tahiry-dev/SPA-restaurant#readme",
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "babel-eslint": "10.1.x",
+    "eslint": "^6.8.0",
+    "eslint-auto-fix": "^1.0.3",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "file-loader": "^6.2.0",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x"
   }
 }
