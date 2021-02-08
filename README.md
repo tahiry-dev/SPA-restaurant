@@ -2,7 +2,8 @@
 
 # Microverse Student Restaurant
 
-> a Single Page Application that load quickly and build safely with Javascript
+> a Single Page Application of Microverse Student Restaurant
+![screenshoot](https://user-images.githubusercontent.com/47100064/107196408-a58f2500-6a03-11eb-9b9a-ea273a21a8d0.png)
 
 
 ## Built With
@@ -12,7 +13,7 @@
 - Bootstrap
 
 ## Getting Started
-
+  To run this project, download the zip file folder that contains the code, and open the index.html inside the dist folder with your favorite web browser
 
 
 ## Authors
