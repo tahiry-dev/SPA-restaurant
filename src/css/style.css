@@ -4,6 +4,7 @@
 -------------------------------------------------------------- */
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 body {
   font-family: "Poppins", sans-serif;
   color: #444;
@@ -111,8 +112,10 @@ h6 {
 }
 
 .nav-menu a:hover,
+.nav-menu a:focus,
 .nav-menu .active > a,
-.nav-menu li:hover > a {
+.nav-menu li:hover > a,
+active-contact:focus {
   color: #ffb03b;
   text-decoration: none;
 }
@@ -200,6 +203,10 @@ h6 {
   font-family: IcoFont;
   position: absolute;
   right: 15px;
+}
+
+.dropdown-menu {
+  background-color: rgb(133, 128, 128);
 }
 
 @media (max-width: 1366px) {
