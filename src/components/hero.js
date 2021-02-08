@@ -1,7 +1,7 @@
 export const hero = function () {
-    const hero_container = document.createElement('section');
-    hero_container.setAttribute('id', 'hero');
-    hero_container.innerHTML = `
+  const hero_container = document.createElement('section');
+  hero_container.setAttribute('id', 'hero');
+  hero_container.innerHTML = `
     <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -24,19 +24,8 @@ export const hero = function () {
               </div>
             </div>
           </div>
-    
-          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-    
-          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    
         </div>
     </div>
   `
-    return hero_container;
+  return hero_container;
 }
