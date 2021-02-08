@@ -421,6 +421,7 @@ body {
   #hero .carousel-inner .carousel-item {
     transition-property: opacity;
     background-position: center top;
+    background: url('../img/slide-1.jpg');
   }
   
   #hero .carousel-inner .carousel-item,
