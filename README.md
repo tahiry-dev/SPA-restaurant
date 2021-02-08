@@ -2,7 +2,7 @@
 
 # Microverse Student Restaurant
 
-> a Single Page Application that load quickly and build safely with Javascript
+> a Single Page Application of Microverse Student Restaurant
 ![screenshoot](https://user-images.githubusercontent.com/47100064/107196408-a58f2500-6a03-11eb-9b9a-ea273a21a8d0.png)
 
 
