@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open"
+    "start": "webpack serve --mode development --open",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -35,11 +36,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
-    "express": "^4.17.1",
-    "popper.js": "^1.16.1",
+    "gh-pages": "^3.1.0",
     "webpack-dev-server": "^3.11.2"
-  },
-  "engines": {
-    "node": "15.x"
   }
 }
