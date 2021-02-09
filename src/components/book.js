@@ -55,7 +55,7 @@ export default function book() {
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your
                   reservation. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="">Send Message</button></div>
             </form>
     
         </div>
