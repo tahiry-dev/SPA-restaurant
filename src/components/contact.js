@@ -42,7 +42,7 @@ export default function contact() {
                   </div>
                 </div>
 
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form class="php-email-form">
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"

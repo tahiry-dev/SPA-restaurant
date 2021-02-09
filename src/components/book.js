@@ -12,7 +12,7 @@ export default function book() {
                 autem.</p>
             </div>
     
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+            <form class="php-email-form">
               <div class="row">
                 <div class="col-lg-4 col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
