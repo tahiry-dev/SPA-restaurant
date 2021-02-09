@@ -10,7 +10,7 @@ export default function header() {
 
               <nav class="nav-menu d-none d-lg-block">
                 <ul class="navbar">
-                  <li class="active"><a href="#">Home</a></li>
+                  <li><a id='home' href="#">Home</a></li>
                   <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Useful links</a>
                   <ul class="dropdown-menu aria-labelledby="navbarDropdown">
@@ -18,7 +18,7 @@ export default function header() {
                     <li><a class="dropdown-item active-contact" id="contact-link">Contact</a></li>
                   </ul>
                 </li>
-                  <li class="book-a-table text-center" id="booking"><a href="#book-a-table">Book a table</a></li>
+                  <li class="book-a-table text-center"><a id="booking">Book a table</a></li>
                 </ul>
               </nav>
           </div>

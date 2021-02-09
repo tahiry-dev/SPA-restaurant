@@ -12,51 +12,33 @@ import footer from './components/footer';
 
 
 
-const homePage = () => {
+const defaultPage = (variablePage = hero) => {
     const parent = document.createElement('div');
     parent.innerHTML = `
         ${header().outerHTML}
-        ${hero().outerHTML}
+        ${variablePage().outerHTML}
         ${why().outerHTML}
         ${footer().outerHTML}
-        
     `
     return parent
 }
 
-const parentElement = document.getElementById("content")
+const container = document.getElementById('content')
 
-parentElement.appendChild(homePage());
+container.appendChild(defaultPage())
 
 
 document.addEventListener('click', (e) => {
     if (e.target && e.target.id == 'menu-link') {
-
-        parentElement.innerHTML = `
-            ${header().outerHTML}
-            ${menu().outerHTML}
-            ${footer().outerHTML}
-        `
+        container.innerHTML = ` ${defaultPage(menu).outerHTML} `
     } else if (e.target && e.target.id == 'contact-link') {
+        container.innerHTML = ` ${defaultPage(contact).outerHTML} `
 
-        parentElement.innerHTML = `
-            ${header().outerHTML}
-            ${contact().outerHTML}
-            ${footer().outerHTML}
-        `
     } else if (e.target && e.target.id == 'booking') {
-        parentElement.innerHTML = `
-            ${header().outerHTML}
-            ${book().outerHTML}
-            ${footer().outerHTML}
-        `
+        container.innerHTML = ` ${defaultPage(book).outerHTML}`
+
     } else if (e.target && e.target.id == 'home') {
-        parentElement.innerHTML = `
-            ${header().outerHTML}
-            ${hero().outerHTML}
-            ${why().outerHTML}
-            ${footer().outerHTML}
-        `
+        container.innerHTML = ` ${defaultPage(hero).outerHTML}`
     }
 
 });

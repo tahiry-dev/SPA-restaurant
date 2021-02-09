@@ -17,8 +17,8 @@ export default function hero() {
                     ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
                     voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                   <div>
-                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                    <a href="#menu" id= "menu-link" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                    <a id="booking" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                   </div>
                 </div>
               </div>
