@@ -11,41 +11,30 @@ import contact from './components/contact';
 import footer from './components/footer';
 
 
-
 const defaultPage = (variablePage = hero) => {
-    const parent = document.createElement('div');
-    parent.innerHTML = `
+  const parent = document.createElement('div');
+  parent.innerHTML = `
         ${header().outerHTML}
         ${variablePage().outerHTML}
         ${why().outerHTML}
         ${footer().outerHTML}
-    `
-    return parent
-}
+    `;
+  return parent;
+};
 
-const container = document.getElementById('content')
+const container = document.getElementById('content');
 
-container.appendChild(defaultPage())
+container.appendChild(defaultPage());
 
 
 document.addEventListener('click', (e) => {
-    if (e.target && e.target.id == 'menu-link') {
-        container.innerHTML = ` ${defaultPage(menu).outerHTML} `
-    } else if (e.target && e.target.id == 'contact-link') {
-        container.innerHTML = ` ${defaultPage(contact).outerHTML} `
-
-    } else if (e.target && e.target.id == 'booking') {
-        container.innerHTML = ` ${defaultPage(book).outerHTML}`
-
-    } else if (e.target && e.target.id == 'home') {
-        container.innerHTML = ` ${defaultPage(hero).outerHTML}`
-    }
-
+  if (e.target && e.target.id === 'menu-link') {
+    container.innerHTML = ` ${defaultPage(menu).outerHTML} `;
+  } else if (e.target && e.target.id === 'contact-link') {
+    container.innerHTML = ` ${defaultPage(contact).outerHTML} `;
+  } else if (e.target && e.target.id === 'booking') {
+    container.innerHTML = ` ${defaultPage(book).outerHTML}`;
+  } else if (e.target && e.target.id === 'home') {
+    container.innerHTML = ` ${defaultPage(hero).outerHTML}`;
+  }
 });
-
-
-
-
-
-
-
