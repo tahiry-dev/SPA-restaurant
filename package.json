@@ -1,16 +1,42 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
+    "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahiry-dev/SPA-restaurant.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahiry-dev/SPA-restaurant/issues"
+  },
+  "homepage": "https://github.com/tahiry-dev/SPA-restaurant#readme",
   "devDependencies": {
-    "webpack": "^5.20.2",
+    "babel-eslint": "10.1.x",
+    "css-loader": "^5.0.2",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x",
+    "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "gh-pages": "^3.1.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
