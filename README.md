@@ -12,6 +12,9 @@
 - Webpack
 - Bootstrap
 
+## Live Demo
+Enjoy this Application online by pasting the following link to your web browser [This Link](http://www.tahiry.live/SPA-restaurant/index.html)
+
 ## Getting Started
   To run this project, download the zip file folder that contains the code, and open the index.html inside the dist folder with your favorite web browser
 
